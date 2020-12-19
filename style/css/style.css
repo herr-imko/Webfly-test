@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Manrope;
+  src: url(../font/Manrope-Medium.ttf);
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../font/Manrope-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.button-primary {
+  background: #4285F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 48px;
+  cursor: pointer;
+}
+.button-primary:hover {
+  background: #3975DA;
+}
+.button-primary span {
+  font: 500 0.875rem Manrope;
+  letter-spacing: 0.16em;
+  color: #FFFFFF;
+}
+
+.button-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 48px;
+  cursor: pointer;
+  border: 1px solid #4285F4;
+}
+.button-secondary:hover {
+  background: #4285F4;
+}
+.button-secondary:hover span {
+  color: white;
+}
+.button-secondary span {
+  font: 500 0.875rem Manrope;
+  letter-spacing: 0.16em;
+  color: #4285F4;
+}
+
+.LRbutton {
+  width: 63px;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.LRbutton::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.LRbutton:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.LRbutton.left::after {
+  content: url("../img/arrow-left.svg");
+}
+.LRbutton.left:hover::after {
+  content: url("../img/arrow-left-hover.svg");
+}
+.LRbutton.right::after {
+  content: url("../img/arrow-right.svg");
+}
+.LRbutton.right:hover::after {
+  content: url("../img/arrow-right-hover.svg");
+}
+
+h1 {
+  font: 400 2.5rem Manrope;
+}
+h2 {
+  font: 400 2rem Manrope;
+}
+h3 {
+  font: 400 1.375rem Manrope;
+}
+h4 {
+  text-transform: uppercase;
+  font: 400 0.875rem Manrope;
+  letter-spacing: 0.16em;
+}
+
+.subtitle {
+  font: 400 1.25rem Manrope;
+}
+
+body {
+  font: 500 1rem Manrope;
+}
+
+caption {
+  font: 500 0.8125rem Manrope;
+  color: #9C9FA7;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.icon.circle {
+  width: 48px;
+  height: 48px;
+  background: #EFF4F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon.circle:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon.circle.close::after {
+  content: url("../img/close.svg");
+}
+.icon.circle.more::after {
+  content: url("../img/more.svg");
+}
+
+@media (max-width: 1024px) {
+  .button-primary span,
+.button-secondary span {
+    font-size: 0.75rem;
+  }
+
+  .LRbutton::after {
+    top: calc(50% - 4px);
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.375rem;
+  }
+  h3 {
+    font-size: 0.9375rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 0.75rem;
+  }
+
+  caption {
+    font-size: 0.625rem;
+  }
+}

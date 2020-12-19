@@ -1,0 +1,235 @@
+@font-face {
+    font-family: Manrope;
+    src: url(../font/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../font/Manrope-Regular.ttf);
+}
+
+
+$blue: #4285F4;
+$dark-grey: #737881;
+$grey: #DCE1E6;
+
+$mobile-max: 1024px;
+$root-font-size: 16px;
+
+@function rem($size) {
+    @return $size / $root-font-size * 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.button-primary {
+    background: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 48px;
+    cursor: pointer;
+
+    &:hover {
+        background: #3975DA;
+    }
+
+    span {
+        font: 500 rem(14px) Manrope;
+        letter-spacing: 0.16em;
+        color: #FFFFFF;
+    }
+
+}
+
+.button-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 48px;
+    cursor: pointer;
+    border: 1px solid $blue;
+
+    &:hover {
+        background: $blue;
+
+        span {
+            color: white;
+        }
+    }
+
+    span {
+        font: 500 rem(14px) Manrope;
+        letter-spacing: 0.16em;
+        color: $blue;
+    }
+}
+
+.LRbutton {
+    width: 63px;
+    height: 56px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    &.left {
+        &::after {
+            content: url("../img/arrow-left.svg")
+        }
+
+        &:hover {
+            &::after {
+                content: url("../img/arrow-left-hover.svg")
+            }
+        }
+    }
+
+    &.right {
+        &::after {
+            content: url("../img/arrow-right.svg")
+        }
+
+        &:hover {
+            &::after {
+                content: url("../img/arrow-right-hover.svg")
+            }
+        }
+    }
+}
+
+h {
+    &1 {
+        font: 400 rem(40px) Manrope;
+    }
+
+    &2 {
+        font: 400 rem(32px) Manrope;
+    }
+
+    &3 {
+        font: 400 rem(22px) Manrope;
+    }
+
+    &4 {
+        text-transform: uppercase;
+        font: 400 rem(14px) Manrope;
+        letter-spacing: 0.16em;
+    }
+}
+
+.subtitle {
+    font: 400 rem(20px) Manrope;
+}
+
+body {
+    font: 500 rem(16px) Manrope;
+}
+
+caption {
+    font: 500 rem(13px) Manrope;
+    color: #9C9FA7;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.icon {
+    &.circle {
+        width: 48px;
+        height: 48px;
+        background: #EFF4F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &.close {
+            &::after {
+                content: url("../img/close.svg");
+            }
+        }
+
+        &.more {
+            &::after {
+                content: url("../img/more.svg");
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-max) {
+
+    .button-primary,
+    .button-secondary {
+        span {
+            font-size: rem(12px);
+        }
+    }
+
+    .LRbutton {
+        &::after {
+            top: calc(50% - 4px);
+        }
+    }
+
+    h {
+        &1 {
+            font-size: rem(28px);
+        }
+
+        &2 {
+            font-size: rem(22px);
+        }
+
+        &3 {
+            font-size: rem(15px);
+        }
+
+        &4 {
+            font-size: rem(12px);
+        }
+    }
+
+    .subtitle {
+        font-size: rem(16px);
+    }
+
+    body {
+        font-size: rem(12px);
+    }
+
+    caption {
+        font-size: rem(10px);
+    }
+}
