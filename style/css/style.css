@@ -19,6 +19,8 @@
   align-items: center;
   padding: 18px 48px;
   cursor: pointer;
+  border-radius: 4px;
+  border: 0;
 }
 .button-primary:hover {
   background: #3975DA;
@@ -27,6 +29,7 @@
   font: 500 0.875rem Manrope;
   letter-spacing: 0.16em;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .button-secondary {
@@ -36,6 +39,7 @@
   padding: 18px 48px;
   cursor: pointer;
   border: 1px solid #4285F4;
+  border-radius: 4px;
 }
 .button-secondary:hover {
   background: #4285F4;
@@ -47,6 +51,7 @@
   font: 500 0.875rem Manrope;
   letter-spacing: 0.16em;
   color: #4285F4;
+  text-transform: uppercase;
 }
 
 .LRbutton {
@@ -101,7 +106,7 @@ body {
   font: 500 1rem Manrope;
 }
 
-caption {
+.caption {
   font: 500 0.8125rem Manrope;
   color: #9C9FA7;
 }
@@ -137,6 +142,205 @@ a:hover {
 }
 .icon.circle.more::after {
   content: url("../img/more.svg");
+}
+
+header .top {
+  padding: 25px 0;
+}
+header .top .container {
+  display: flex;
+  align-items: center;
+}
+header .top .container .logo {
+  margin-right: 31px;
+}
+header .top .container .address {
+  color: #737881;
+  width: 240px;
+}
+header .top .container .contacts {
+  margin-left: auto;
+  text-align: right;
+  margin-right: 100px;
+}
+header .bot {
+  border-top: 1px solid #DCE1E6;
+  border-bottom: 1px solid #DCE1E6;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  padding: 25px 27px;
+  text-transform: uppercase;
+}
+header nav a h4 {
+  color: #737881;
+}
+header nav a.active, header nav a:hover {
+  border-bottom: 2px solid #4285F4;
+}
+header nav a.active h4, header nav a:hover h4 {
+  color: black;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 40px;
+  margin: auto;
+}
+
+section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#popular-services {
+  margin-bottom: 70px;
+}
+#popular-services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#popular-services .cards .card {
+  border: 1px solid #DCE1E6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  height: 289px;
+  width: 583px;
+  padding: 34px 0px 32px 34px;
+  position: relative;
+  margin-bottom: 40px;
+}
+#popular-services .cards .card .left {
+  display: flex;
+  flex-direction: column;
+}
+#popular-services .cards .card .left h3 {
+  margin-bottom: 8px;
+}
+#popular-services .cards .card .left .info {
+  max-width: 340px;
+  margin-bottom: auto;
+  color: #737881;
+}
+#popular-services .cards .card .left h2 {
+  color: #4285F4;
+}
+#popular-services .cards .card .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#doctors {
+  margin-bottom: 110px;
+}
+#doctors .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#doctors .cards .card {
+  width: 277px;
+}
+#doctors .cards .card .photo {
+  margin-bottom: 15px;
+}
+#doctors .cards .card .name {
+  margin-bottom: 5px;
+}
+#doctors .cards .card .info {
+  color: #737881;
+}
+
+#signup {
+  background: linear-gradient(270.17deg, #D0DAEA 0.11%, #F5F5F5 99.15%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+#signup .left {
+  width: 480px;
+  margin-left: 100px;
+}
+#signup .left h2 {
+  margin-bottom: 16px;
+}
+#signup .left .subtitle {
+  color: #737881;
+  margin-bottom: 40px;
+}
+#signup .left form .row {
+  display: flex;
+}
+#signup .left form .row:first-of-type {
+  margin-bottom: 18px;
+}
+#signup .left form .row .input-wrapper {
+  position: relative;
+}
+#signup .left form .row .input-wrapper input[type=tel] {
+  background: #FFFFFF;
+  border-radius: 4px;
+  height: 56px;
+  width: 273px;
+  border: none;
+  padding-left: 54px;
+  font-size: 22px;
+}
+#signup .left form .row .input-wrapper input[type=tel]::placeholder {
+  color: #DCE1E6;
+}
+#signup .left form .row .input-wrapper .plus-seven {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}
+#signup .left form .row button {
+  margin-left: auto;
+}
+#signup .left form .row input[type=checkbox] {
+  -moz-appearance: initial;
+  visibility: hidden;
+  position: relative;
+  width: 24px;
+  flex-shrink: 0;
+  height: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+#signup .left form .row input[type=checkbox]::before {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  content: "";
+}
+#signup .left form .row input[type=checkbox]:checked::after {
+  content: url("../img/check.svg");
+  position: absolute;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#signup .left form .row .caption {
+  max-width: 350px;
+}
+#signup .right {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @media (max-width: 1024px) {
