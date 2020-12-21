@@ -108,7 +108,7 @@ body {
 
 .caption {
   font: 500 0.8125rem Manrope;
-  color: #9C9FA7;
+  color: #737881;
 }
 
 a {
@@ -262,9 +262,12 @@ section .section-header {
 
 #signup {
   background: linear-gradient(270.17deg, #D0DAEA 0.11%, #F5F5F5 99.15%);
-  padding: 100px 0;
-  position: relative;
   overflow: hidden;
+}
+#signup .container {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 #signup .left {
   width: 480px;
@@ -339,8 +342,75 @@ section .section-header {
 }
 #signup .right {
   position: absolute;
-  right: 0;
+  right: 140px;
   top: 0;
+}
+
+footer {
+  padding-top: 56px;
+  padding-bottom: 20px;
+}
+footer .container {
+  display: flex;
+  margin-bottom: 90px;
+}
+footer .container .col {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .container .col .title {
+  margin-bottom: 27px;
+}
+footer .container .col .nav {
+  margin-bottom: 24px;
+  color: #737881;
+}
+footer .container .col .contacts span {
+  font-weight: 400;
+  font-size: 15px;
+  color: #737881;
+}
+footer .container .col .section {
+  margin-bottom: 40px;
+}
+footer .container .col .section:last-child {
+  margin-bottom: 0;
+}
+footer .container .col .section .section-title {
+  margin-bottom: 11px;
+}
+footer .container .col .docs {
+  margin-bottom: 33px;
+}
+footer .container .col .docs .doc {
+  display: flex;
+  margin-bottom: 19px;
+}
+footer .container .col .docs .doc:last-child {
+  margin-bottom: 0;
+}
+footer .container .col .docs .doc .caption {
+  max-width: 180px;
+  color: #737881;
+  margin-left: 16px;
+}
+footer .container .col .other a {
+  display: block;
+}
+footer .container .col .other a:first-child {
+  margin-bottom: 16px;
+}
+footer .container .col .logo {
+  margin-bottom: 22px;
+}
+footer .container .col .caption + .caption {
+  color: black;
+  margin-top: 8px;
+}
+footer .warning {
+  text-align: center;
 }
 
 @media (max-width: 1024px) {

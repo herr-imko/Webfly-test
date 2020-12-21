@@ -149,7 +149,7 @@ body {
 
 .caption {
     font: 500 rem(13px) Manrope;
-    color: #9C9FA7;
+    color: $dark-grey;
 }
 
 a {
@@ -342,9 +342,13 @@ section {
 
 #signup {
     background: linear-gradient(270.17deg, #D0DAEA 0.11%, #F5F5F5 99.15%);
-    padding: 100px 0;
-    position: relative;
     overflow: hidden;
+
+    .container {
+        position: relative;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
 
     .left {
         width: 480px;
@@ -437,8 +441,96 @@ section {
 
     .right {
         position: absolute;
-        right: 0;
+        right: 140px;
         top: 0;
+    }
+}
+
+footer {
+    padding-top: 56px;
+    padding-bottom: 20px;
+
+    .container {
+        display: flex;
+        margin-bottom: 90px;
+
+        .col {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .title {
+                margin-bottom: 27px;
+            }
+
+            .nav {
+                margin-bottom: 24px;
+                color: $dark-grey;
+            }
+
+            .contacts {
+                span {
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: $dark-grey;
+                }
+            }
+
+            .section {
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .section-title {
+                    margin-bottom: 11px;
+                }
+            }
+
+            .docs {
+                margin-bottom: 33px;
+
+                .doc {
+                    display: flex;
+                    margin-bottom: 19px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .caption {
+                        max-width: 180px;
+                        color: $dark-grey;
+                        margin-left: 16px;
+                    }
+                }
+            }
+
+            .other {
+                a {
+                    display: block;
+
+                    &:first-child {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+
+            .logo {
+                margin-bottom: 22px;
+            }
+
+            .caption + .caption {
+                color: black;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .warning {
+        text-align: center;
     }
 }
 
