@@ -17,3 +17,11 @@ $("footer .title").on("click", function () {
 	$(this).toggleClass("active");
 	$(this).next().slideToggle();
 });
+
+$("header .top .more").on("click", function () {
+	$("header .bot").toggleClass('show');
+});
+
+$("header .bot .close").on("click", function () {
+	$("header .bot").toggleClass('show')
+});

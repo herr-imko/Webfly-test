@@ -33,7 +33,7 @@ html {
 }
 
 .d-mobile {
-    display: none;
+    display: none !important;
 }
 
 .button-primary {
@@ -207,6 +207,18 @@ a {
             &::after {
                 content: url("../img/more.svg");
             }
+        }
+    }
+
+    &.call {
+        &::after {
+            content: url("../img/phone-call.svg");
+        }
+    }
+
+    &.pin {
+        &::after {
+            content: url("../img/pin.svg");
         }
     }
 }
@@ -801,7 +813,7 @@ footer {
     }
 
     .d-mobile {
-        display: flex;
+        display: flex !important;
     }
 
     .container {
@@ -980,7 +992,7 @@ footer {
                         }
                     }
 
-                    .other{
+                    .other {
                         margin-bottom: 16px;
                     }
                 }
@@ -997,6 +1009,110 @@ footer {
 
             img {
                 width: 100%;
+            }
+        }
+    }
+
+    header {
+        .top {
+            padding: 0;
+            padding-top: 16px;
+
+            > .icon {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+            }
+
+            // display: none;
+            .container {
+                align-items: flex-start;
+                flex-direction: column;
+
+                .logo {
+                    margin-bottom: 20px;
+                }
+
+                .contacts,
+                .address {
+                    border: 1px solid #DCE1E6;
+                    border-radius: 8px;
+                    width: 100%;
+                    text-align: left;
+                    padding: 16px;
+                    position: relative;
+                    margin-bottom: 16px;
+
+                    .icon {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 24px;
+                    }
+                }
+
+                .address {
+                    padding-right: 90px;
+                    color: black;
+                }
+            }
+        }
+
+        .bot {
+            // display: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            background: white;
+            height: 100vh;
+            width: 100vw;
+            padding: 128px 16px 40px 16px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all linear 0.2s;
+
+            &.show {
+                // transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            > .button-primary {
+                margin-top: auto;
+            }
+
+            .icon {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+            }
+
+            .container {
+                margin: 0;
+
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    a {
+                        padding: 0;
+                        margin-bottom: 24px;
+
+                        &.active {
+                            border: none;
+                        }
+
+                        h4 {
+                            letter-spacing: normal;
+                            text-transform: none;
+                            font-size: rem(22px);
+                        }
+                    }
+                }
             }
         }
     }
