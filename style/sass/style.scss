@@ -24,6 +24,12 @@ $root-font-size: 16px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    outline: none;
+    transition: all linear 0.1s;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .button-primary {
@@ -75,11 +81,13 @@ $root-font-size: 16px;
 }
 
 .LRbutton {
-    width: 63px;
-    height: 56px;
+    width: 63px !important;
+    height: 56px !important;
     border-radius: 4px;
-    position: relative;
+    position: absolute;
     cursor: pointer;
+    top: calc(50% - 11px);
+    transform: translateY(-50%);
 
     &::after {
         position: absolute;
@@ -93,6 +101,8 @@ $root-font-size: 16px;
     }
 
     &.left {
+        left: -72px;
+
         &::after {
             content: url("../img/arrow-left.svg")
         }
@@ -105,6 +115,8 @@ $root-font-size: 16px;
     }
 
     &.right {
+        right: -72px;
+
         &::after {
             content: url("../img/arrow-right.svg")
         }
@@ -343,11 +355,15 @@ section {
 #signup {
     background: linear-gradient(270.17deg, #D0DAEA 0.11%, #F5F5F5 99.15%);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .container {
         position: relative;
-        padding-bottom: 100px;
-        padding-top: 100px;
+        height: 511px;
+        padding-bottom: 116px;
+        padding-top: 116px;
     }
 
     .left {
@@ -381,7 +397,7 @@ section {
                         width: 273px;
                         border: none;
                         padding-left: 54px;
-                        font-size: 22px;
+                        font-size: rem(22px);
 
                         &::placeholder {
                             color: $grey;
@@ -472,7 +488,7 @@ footer {
             .contacts {
                 span {
                     font-weight: 400;
-                    font-size: 15px;
+                    font-size: rem(15px);
                     color: $dark-grey;
                 }
             }
@@ -531,6 +547,196 @@ footer {
 
     .warning {
         text-align: center;
+    }
+}
+
+#doctor-banner {
+    background: linear-gradient(270.17deg, #D0DAEA 0.11%, #F5F5F5 99.15%);
+
+    .banner-wrapper {
+        padding: 37px 105px 64px 105px;
+        position: relative;
+
+        .left {
+            height: 320px;
+            width: 583px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .breadcrumbs {
+                margin-bottom: 6px;
+
+                a {
+                    &::after {
+                        content: "—";
+                        margin-left: 2px;
+                    }
+
+                    &:last-child {
+                        &::after {
+                            content: initial;
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                margin-bottom: 8px;
+            }
+
+            .subtitle {
+                color: $dark-grey;
+            }
+
+            .button-primary {
+                margin-top: auto;
+            }
+        }
+
+        .right {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            right: 105px;
+        }
+    }
+}
+
+.LR {
+    padding: 0 105px 0 90px;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        width: 683px;
+    }
+
+    .right {
+        width: 190px;
+    }
+}
+
+#doctor-about {
+    margin-top: 55px;
+    margin-bottom: 180px;
+
+    h3 {
+        margin-bottom: 24px;
+    }
+
+    .subnav {
+        position: sticky;
+        top: 56px;
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid $grey;
+
+        a {
+            margin-left: -2px;
+            margin-bottom: 4px;
+            height: 36px;
+            padding-left: 27px;
+            display: flex;
+            align-items: center;
+            border-left: 2px solid $grey;
+            color: $dark-grey;
+
+            &.active,
+            &:hover {
+                color: black;
+                border-left: 2px solid $blue;
+            }
+        }
+    }
+}
+
+#doctor-about-main {
+    margin-bottom: 88px;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    .subtitle {
+        margin-bottom: 32px;
+    }
+
+    .links {
+        display: flex;
+
+        a {
+            display: flex;
+            margin-right: 24px;
+            align-items: center;
+
+            svg:hover {
+                path {
+                    fill: black;
+                }
+            }
+        }
+    }
+}
+
+#doctor-about-spec {
+    margin-bottom: 64px;
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tag {
+            border: 1px solid $grey;
+            box-sizing: border-box;
+            border-radius: 8px;
+            padding: 18px 32px;
+            margin-right: 16px;
+            margin-bottom: 16px;
+
+            h4 {
+                color: $dark-grey;
+            }
+        }
+    }
+}
+
+#doctor-about-education {
+    margin-bottom: 64px;
+
+    .item {
+        display: flex;
+        margin-bottom: 40px;
+
+        .year {
+            flex-shrink: 0;
+            margin-right: 32px;
+            width: 72px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #DCE1E6;
+            border-radius: 8px;
+        }
+
+        .text {
+            color: $dark-grey;
+        }
+    }
+}
+
+#doctor-about-docs {
+    .doc-slider {
+        position: relative;
+
+        .slide {
+            a {
+                img {
+                    border-radius: 8px;
+                }
+            }
+        }
     }
 }
 
