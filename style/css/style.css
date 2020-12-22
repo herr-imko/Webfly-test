@@ -201,8 +201,8 @@ header nav a.active h4, header nav a:hover h4 {
 }
 
 .container {
-  max-width: 1280px;
-  width: 100%;
+  width: 1280px;
+  max-width: 100%;
   padding: 0 40px;
   margin: auto;
 }

@@ -12,3 +12,9 @@ document.querySelectorAll(".subnav a").forEach((a) => {
 		a.classList.add("active");
 	};
 });
+
+var Parent = document.querySelector("#doctor-about");
+var ChildHeight = Parent.firstElementChild.offsetHeight;
+var a = document.querySelector(".fixed-aqua");
+
+

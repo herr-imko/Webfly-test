@@ -150,31 +150,30 @@
 								</div>
 							</section>
 							<section id="doctor-about-docs">
-                        <h3>Галерея документов</h3>
+								<h3>Галерея документов</h3>
 								<div class="doc-slider">
 									<div class="slide">
-                              <a href="">
-                                 <img src="style/img/doc2.png" alt="">
-                              </a>
-                           </div>
+										<a href="">
+											<img src="style/img/doc2.png" alt="" />
+										</a>
+									</div>
 									<div class="slide">
-                              <a href="">
-                                 <img src="style/img/doc1.png" alt="">
-                              </a>
-                           </div>
+										<a href="">
+											<img src="style/img/doc1.png" alt="" />
+										</a>
+									</div>
 									<div class="slide">
-                              <a href="">
-                                 <img src="style/img/doc2.png" alt="">
-                              </a>
-                           </div>
+										<a href="">
+											<img src="style/img/doc2.png" alt="" />
+										</a>
+									</div>
 									<div class="slide">
-                              <a href="">
-                                 <img src="style/img/doc1.png" alt="">
-                              </a>
-                           </div>
+										<a href="">
+											<img src="style/img/doc1.png" alt="" />
+										</a>
+									</div>
 								</div>
-                     </section>
-                     
+							</section>
 						</div>
 						<div class="right">
 							<div class="subnav">
@@ -187,8 +186,8 @@
 						</div>
 					</div>
 				</div>
-         </section>
-         
+			</section>
+
 			<section id="signup">
 				<div class="container">
 					<div class="left">
@@ -218,8 +217,7 @@
 					</div>
 				</div>
 			</section>
-      </main>
-      
+		</main>
 
 		<footer>
 			<div class="container">
@@ -276,20 +274,46 @@
 			</div>
 		</footer>
 
-		<script src="js/index.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/index.js"></script>
 		<script src="js/slick.js"></script>
 		<script>
 			$(document).ready(function () {
 				$(".doc-slider").slick({
 					infinite: false,
 					slidesToShow: 3.35,
-               slidesToScroll: 1,
-               prevArrow: '<div class="LRbutton left"></div>',
-               nextArrow: '<div class="LRbutton right"></div>',
-               appendArrows: '.doc-slider',
-               // fade: true,
+					slidesToScroll: 1,
+					prevArrow: '<div class="LRbutton left"></div>',
+					nextArrow: '<div class="LRbutton right"></div>',
+					appendArrows: ".doc-slider",
+					// fade: true,
 				});
+			});
+		</script>
+		<script>
+			let sects = {
+				"doctor-about-main": null,
+				"doctor-about-spec": null,
+				"doctor-about-education": null,
+				"doctor-about-docs": null,
+				signup: null,
+			};
+			for (const key in sects) {
+				sects[key] = $(`#${key}`).offset().top;
+			}
+			window.addEventListener("scroll", function () {
+				let lastScroll;
+				for (const key in sects) {
+					if (window.scrollY + 100 >= sects[key]) {
+						lastScroll = key;
+					}
+				}
+				if (lastScroll) {
+					document.querySelectorAll(".subnav a").forEach((a) => {
+						a.classList.remove("active");
+					});
+					$(`a[href="#${lastScroll}"]`).addClass("active");
+				}
 			});
 		</script>
 	</body>
