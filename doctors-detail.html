@@ -10,39 +10,45 @@
 	<body>
 		<header>
 			<div class="top">
+				<div class="icon circle more d-mobile"></div>
 				<div class="container">
 					<a class="logo" href="#">
 						<img src="style/img/logo-header.png" alt="" />
 					</a>
-					<div class="address">Рублево-Успенское ш., дом 72, Жуковка, Московская обл.</div>
-					<div class="contacts">
+					<div class="address d-desktop">Рублево-Успенское ш., дом 72, Жуковка, Московская обл.</div>
+					<div class="contacts d-desktop">
 						<h3><a href="tel:+74952500000">+7 495 250-00-00</a></h3>
 						<span class="caption">Без выходных, с 9 до 21</span>
+						<div class="icon call d-mobile"></div>
 					</div>
-					<div class="signup button-primary">
+					<div class="signup button-primary d-desktop">
 						<span>записаться</span>
 					</div>
 				</div>
 			</div>
 			<div class="bot">
+				<div class="icon circle close d-mobile"></div>
 				<div class="container">
 					<nav>
-						<a href="">
-							<h4>главная</h4>
-						</a>
-						<a href="">
-							<h4>услуги</h4>
-						</a>
 						<a href="" class="active">
-							<h4>врачи</h4>
+							<h4>Главная</h4>
 						</a>
 						<a href="">
-							<h4>потребителю</h4>
+							<h4>Услуги</h4>
 						</a>
 						<a href="">
-							<h4>контакты</h4>
+							<h4>Врачи</h4>
+						</a>
+						<a href="">
+							<h4>Потребителю</h4>
+						</a>
+						<a href="">
+							<h4>Контакты</h4>
 						</a>
 					</nav>
+				</div>
+				<div class="button-primary d-mobile">
+					<span>записаться</span>
 				</div>
 			</div>
 		</header>
@@ -73,6 +79,13 @@
 				<div class="container">
 					<div class="LR">
 						<div class="left">
+							<div class="subnav d-mobile">
+								<a href="#doctor-about-main" class="active">О враче</a>
+								<a href="#doctor-about-spec">Специализация</a>
+								<a href="#doctor-about-education">Образование</a>
+								<a href="#doctor-about-docs">Галерея документов</a>
+								<a href="#signup">Онлайн-запись</a>
+							</div>
 							<section id="doctor-about-main">
 								<h2>О враче</h2>
 								<div class="subtitle">За 10 лет Татьяной Ивановной было проведено свыше 1500 операций по исправлению носовой перегородки и пластической корректировки формы носа. Работает в технике Закрытая риносептопластика — современный метод, практически бескровный и с минимальным сроком реабилитации.</div>
@@ -126,10 +139,10 @@
 										<h4>Липосакция</h4>
 									</div>
 									<div class="tag">
-										<h4>Абдоминопластика</h4>
+										<h4>Липофилинг</h4>
 									</div>
 									<div class="tag">
-										<h4>Липофилинг</h4>
+										<h4>Абдоминопластика</h4>
 									</div>
 								</div>
 							</section>
@@ -151,6 +164,26 @@
 							<section id="doctor-about-docs">
 								<h3>Галерея документов</h3>
 								<div class="doc-slider">
+									<div class="slide">
+										<a href="">
+											<img src="style/img/doc2.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/doc1.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/doc2.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/doc1.png" alt="" />
+										</a>
+									</div>
 									<div class="slide">
 										<a href="">
 											<img src="style/img/doc2.png" alt="" />
@@ -222,42 +255,48 @@
 			<div class="container">
 				<div class="col">
 					<h4 class="title">Карта сайта</h4>
-					<a href="" class="nav">Услуги</a>
-					<a href="" class="nav">Потребителю</a>
-					<a href="" class="nav">Врачи</a>
-					<a href="" class="nav">Контакты</a>
+					<div class="content">
+						<a href="" class="nav">Услуги</a>
+						<a href="" class="nav">Потребителю</a>
+						<a href="" class="nav">Врачи</a>
+						<a href="" class="nav">Контакты</a>
+					</div>
 				</div>
 				<div class="col">
 					<h4 class="title">контакты</h4>
-					<div class="section">
-						<div class="section-title">Телефон</div>
-						<div class="contacts">
-							<h3><a href="tel:+74952500000">+7 495 250-00-00</a></h3>
-							<span>Без выходных с 9:00 до 21:00</span>
+					<div class="content">
+						<div class="section">
+							<div class="section-title">Телефон</div>
+							<div class="contacts">
+								<h3><a href="tel:+74952500000">+7 495 250-00-00</a></h3>
+								<span>Без выходных с 9:00 до 21:00</span>
+							</div>
 						</div>
-					</div>
-					<div class="section">
-						<div class="section-title">Адрес</div>
-						<div class="addr">
-							<span> Рублево-Успенское ш., дом 72, Жуковка, Московская обл. </span>
+						<div class="section">
+							<div class="section-title">Адрес</div>
+							<div class="addr">
+								<span> Рублево-Успенское ш., дом 72, Жуковка, Московская обл. </span>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col">
 					<h4 class="title">документы</h4>
-					<div class="docs">
-						<a class="doc">
-							<img src="style/img/pdf.svg" alt="" />
-							<span class="caption">Лицензия на ведение медицинской деятельности</span>
-						</a>
-						<a class="doc">
-							<img src="style/img/pdf.svg" alt="" />
-							<span class="caption">Платежные реквизиты ООО «Клиника Жуковка»</span>
-						</a>
-					</div>
-					<div class="other">
-						<a href="">Договор оферты </a>
-						<a href="">Политика конфиденциальности</a>
+					<div class="content">
+						<div class="docs">
+							<a class="doc">
+								<img src="style/img/pdf.svg" alt="" />
+								<span class="caption">Лицензия на ведение медицинской деятельности</span>
+							</a>
+							<a class="doc">
+								<img src="style/img/pdf.svg" alt="" />
+								<span class="caption">Платежные реквизиты ООО «Клиника Жуковка»</span>
+							</a>
+						</div>
+						<div class="other">
+							<a href="">Договор оферты </a>
+							<a href="">Политика конфиденциальности</a>
+						</div>
 					</div>
 				</div>
 				<div class="col">
@@ -268,12 +307,14 @@
 					<div class="caption">Сделано в Вебфлай</div>
 				</div>
 			</div>
-			<div class="warning">
-				<img src="style/img/warning.png" alt="" />
+			<div class="container">
+				<div class="warning">
+					<img src="style/img/warning.png" alt="" />
+				</div>
 			</div>
 		</footer>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/slick.js"></script>
 		<script>
@@ -285,7 +326,15 @@
 					prevArrow: '<div class="LRbutton left"></div>',
 					nextArrow: '<div class="LRbutton right"></div>',
 					appendArrows: ".doc-slider",
-					// fade: true,
+					swipeToSlide: true,
+					responsive: [
+						{
+							breakpoint: 600,
+							settings: {
+								arrows: false,
+							},
+						},
+					],
 				});
 			});
 		</script>
@@ -317,10 +366,3 @@
 		</script>
 	</body>
 </html>
-<!-- <div class="nav">
-	<div class="nav" data-tab="about">О враче</div>
-	<div class="nav" data-tab="specialization">О враче</div>
-	<div class="nav" data-tab="education">О враче</div>
-	<div class="nav" data-tab="gallery-docs">О враче</div>
-	<div class="nav" data-tab="online-signup">О враче</div>
-</div> -->

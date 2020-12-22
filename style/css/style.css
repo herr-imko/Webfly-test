@@ -242,6 +242,8 @@ section .section-header {
 }
 #offers .big-slider .slide .content {
   width: 632px;
+  position: relative;
+  z-index: 10;
 }
 #offers .big-slider .slide .content .date {
   margin-bottom: 13px;
@@ -438,6 +440,9 @@ footer .container {
   display: flex;
   margin-bottom: 90px;
 }
+footer .container:last-child {
+  margin-bottom: 0;
+}
 footer .container .col {
   width: 25%;
   display: flex;
@@ -500,6 +505,9 @@ footer .container .col .caption + .caption {
 }
 footer .warning {
   text-align: center;
+}
+footer .warning img {
+  width: 100%;
 }
 
 #doctor-banner {
@@ -652,6 +660,10 @@ footer .warning {
   border-radius: 8px;
 }
 
+.dn {
+  display: none !important;
+}
+
 @media (max-width: 1024px) {
   .button-primary span,
 .button-secondary span {
@@ -748,7 +760,7 @@ footer .warning {
     padding: 40px 16px 24px 16px;
     display: flex;
     justify-content: center;
-    height: initial;
+    height: 410px;
   }
   #signup .right {
     display: none;
@@ -810,6 +822,79 @@ footer .warning {
     right: 20px;
   }
 
+  #doctor-banner .container .banner-wrapper {
+    padding: 21px 16px 340px 16px;
+  }
+  #doctor-banner .container .banner-wrapper .left {
+    width: 100%;
+    height: initial;
+  }
+  #doctor-banner .container .banner-wrapper .left .breadcrumbs {
+    margin-bottom: 8px;
+  }
+  #doctor-banner .container .banner-wrapper .left h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  #doctor-banner .container .banner-wrapper .left .subtitle {
+    margin-bottom: 8px;
+  }
+  #doctor-banner .container .banner-wrapper .right {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  #doctor-banner .container .banner-wrapper .right img {
+    width: 320px;
+  }
+
+  #doctor-about {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
+  #doctor-about h3 {
+    margin-bottom: 16px;
+  }
+  #doctor-about .subnav {
+    position: static;
+    margin-left: 8px;
+    margin-bottom: 32px;
+  }
+
+  #doctor-about-main .links a {
+    margin-right: 16px;
+  }
+  #doctor-about-main .links a svg {
+    height: 24px;
+  }
+
+  #doctor-about-spec .tags .tag {
+    padding: 16px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
+  #doctor-about-education .item {
+    margin-bottom: 30px;
+  }
+
+  #doctor-about-docs .doc-slider .slide a img {
+    width: calc(100vw / 4);
+    max-width: 150px;
+  }
+
+  .LR {
+    padding: 0;
+  }
+  .LR .left {
+    width: 100%;
+  }
+  .LR .right {
+    display: none;
+  }
+
+  footer {
+    padding-top: 32px;
+  }
   footer .container {
     flex-direction: column;
     margin-bottom: 16px;
@@ -907,7 +992,7 @@ header .top .container .address .icon {
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     top: 0;
     background: white;
     height: 100vh;
@@ -948,5 +1033,45 @@ header .top .container .address .icon {
     letter-spacing: normal;
     text-transform: none;
     font-size: 1.375rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .LR {
+    padding: 0;
+  }
+  .LR .left {
+    margin-right: 64px;
+    flex-shrink: 1;
+  }
+  .LR .right {
+    flex-shrink: 0;
+  }
+
+  #doctor-about-docs .doc-slider {
+    width: calc(100% - 80px);
+    margin-left: 64px;
+  }
+
+  #popular-services .cards .card {
+    width: 49%;
+  }
+
+  #doctors .cards .card {
+    width: 24%;
+  }
+  #doctors .cards .card .photo img {
+    width: 100%;
+  }
+
+  #signup .left {
+    position: relative;
+    z-index: 10;
+  }
+
+  footer .container {
+    justify-content: space-between;
+  }
+  footer .col {
+    width: 24% !important;
   }
 }
