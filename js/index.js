@@ -13,8 +13,7 @@ document.querySelectorAll(".subnav a").forEach((a) => {
 	};
 });
 
-var Parent = document.querySelector("#doctor-about");
-var ChildHeight = Parent.firstElementChild.offsetHeight;
-var a = document.querySelector(".fixed-aqua");
-
-
+$("footer .title").on("click", function () {
+	$(this).toggleClass("active");
+	$(this).next().slideToggle();
+});

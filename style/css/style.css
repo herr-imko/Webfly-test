@@ -19,6 +19,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.d-mobile {
+  display: none;
+}
+
 .button-primary {
   background: #4285F4;
   display: flex;
@@ -379,6 +383,11 @@ footer .container .col {
   flex-direction: column;
   align-items: flex-start;
 }
+footer .container .col .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 footer .container .col .title {
   margin-bottom: 27px;
 }
@@ -613,7 +622,157 @@ footer .warning {
     font-size: 0.75rem;
   }
 
-  caption {
+  .caption {
     font-size: 0.625rem;
+  }
+
+  .d-desktop {
+    display: none;
+  }
+
+  .d-mobile {
+    display: flex;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  section .section-header {
+    margin-bottom: 24px;
+  }
+
+  #popular-services .cards {
+    justify-content: center;
+    margin-right: -16px;
+  }
+  #popular-services .cards .card {
+    padding: 20px 0px 24px 16px;
+    height: 208px;
+    max-width: 300px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+  }
+  #popular-services .cards .card:last-child {
+    margin-bottom: 20px;
+  }
+  #popular-services .cards .card .left .info {
+    z-index: 1;
+    max-width: 172px;
+  }
+
+  #doctors {
+    margin-bottom: 72px;
+  }
+  #doctors .cards {
+    justify-content: center;
+    margin-right: -16px;
+  }
+  #doctors .cards .card {
+    width: 136px;
+    margin-bottom: 32px;
+    margin-right: 16px;
+  }
+  #doctors .cards .card .photo {
+    margin-bottom: 8px;
+  }
+  #doctors .cards .card .photo img {
+    width: 100%;
+  }
+  #doctors .cards .card .name {
+    margin-bottom: 3px;
+  }
+  #signup .container {
+    padding: 40px 16px 24px 16px;
+    display: flex;
+    justify-content: center;
+    height: initial;
+  }
+  #signup .right {
+    display: none;
+  }
+  #signup .left {
+    width: 288px;
+    margin: 0;
+  }
+  #signup .left br {
+    display: none;
+  }
+  #signup .left h2 {
+    margin-bottom: 8px;
+  }
+  #signup .left .subtitle {
+    margin-bottom: 32px;
+  }
+  #signup .left form .row:first-of-type {
+    margin-bottom: 18px;
+    flex-direction: column;
+  }
+  #signup .left form .row button {
+    margin-left: initial;
+    max-width: 287px;
+  }
+  #signup .left form .row .input-wrapper input[type=tel] {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  #signup .left form .row .input-wrapper .plus-seven {
+    top: calc(50% - 7px);
+    font-size: 22px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  footer .container .col {
+    width: 100%;
+    border-top: 1px solid #DCE1E6;
+  }
+  footer .container .col:nth-child(3) {
+    border-bottom: 1px solid #DCE1E6;
+  }
+  footer .container .col:nth-child(4) {
+    border-top: none;
+  }
+  footer .container .col .title {
+    margin: 0;
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
+  }
+  footer .container .col .title::after {
+    margin-left: auto;
+    content: url("../img/arrow-down.svg");
+    transition: all linear 0.2s;
+  }
+  footer .container .col .title.active::after {
+    transform: rotate(180deg);
+  }
+  footer .container .col .content {
+    display: none;
+  }
+  footer .container .col .content > a {
+    display: block;
+    margin-bottom: 16px;
+  }
+  footer .container .col .content .section {
+    margin-bottom: 16px;
+  }
+  footer .container .col .content .contacts span {
+    font-size: 0.6875rem;
+  }
+  footer .container .col .content .other {
+    margin-bottom: 16px;
+  }
+  footer .container .col .logo {
+    margin-bottom: 16px;
+    margin-top: 29px;
+  }
+  footer .warning {
+    padding: 0 16px;
+  }
+  footer .warning img {
+    width: 100%;
   }
 }

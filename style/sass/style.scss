@@ -32,6 +32,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.d-mobile {
+    display: none;
+}
+
 .button-primary {
     background: $blue;
     display: flex;
@@ -476,6 +480,13 @@ footer {
             flex-direction: column;
             align-items: flex-start;
 
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+            }
+
             .title {
                 margin-bottom: 27px;
             }
@@ -781,7 +792,212 @@ footer {
         font-size: rem(12px);
     }
 
-    caption {
+    .caption {
         font-size: rem(10px);
+    }
+
+    .d-desktop {
+        display: none;
+    }
+
+    .d-mobile {
+        display: flex;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    section {
+        .section-header {
+            margin-bottom: 24px;
+        }
+    }
+
+    #popular-services {
+        .cards {
+            justify-content: center;
+            margin-right: -16px;
+
+            .card {
+                padding: 20px 0px 24px 16px;
+                height: 208px;
+                max-width: 300px;
+                margin-bottom: 16px;
+                margin-right: 16px;
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+
+                .left {
+                    .info {
+                        z-index: 1;
+                        max-width: 172px;
+                    }
+                }
+            }
+        }
+    }
+
+    #doctors {
+        margin-bottom: 72px;
+
+        .cards {
+            justify-content: center;
+            margin-right: -16px;
+
+            .card {
+                width: 136px;
+                margin-bottom: 32px;
+                margin-right: 16px;
+
+                .photo {
+                    margin-bottom: 8px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .name {
+                    margin-bottom: 3px;
+                }
+
+                .info {}
+            }
+        }
+    }
+
+    #signup {
+        .container {
+            padding: 40px 16px 24px 16px;
+            display: flex;
+            justify-content: center;
+            height: initial;
+        }
+
+        .right {
+            display: none;
+        }
+
+        .left {
+            width: 288px;
+            margin: 0;
+
+            br {
+                display: none;
+            }
+
+            h2 {
+                margin-bottom: 8px;
+            }
+
+            .subtitle {
+                margin-bottom: 32px;
+            }
+
+            form {
+                .row {
+                    &:first-of-type {
+                        margin-bottom: 18px;
+                        flex-direction: column;
+                    }
+
+                    button {
+                        margin-left: initial;
+                        max-width: 287px;
+                    }
+
+                    .input-wrapper {
+
+                        input[type=tel] {
+                            width: 100%;
+                            margin-bottom: 16px;
+                        }
+
+                        .plus-seven {
+                            top: calc(50% - 7px);
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            flex-direction: column;
+            margin-bottom: 16px;
+
+            .col {
+                width: 100%;
+                border-top: 1px solid $grey;
+
+                &:nth-child(3) {
+                    border-bottom: 1px solid $grey;
+                }
+
+                &:nth-child(4) {
+                    border-top: none;
+                }
+
+                .title {
+                    margin: 0;
+                    padding: 16px 0;
+                    width: 100%;
+                    display: flex;
+
+                    &::after {
+                        margin-left: auto;
+                        content: url("../img/arrow-down.svg");
+                        transition: all linear 0.2s;
+                    }
+
+                    &.active {
+                        &::after {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .content {
+                    display: none;
+
+                    > a {
+                        display: block;
+                        margin-bottom: 16px;
+                    }
+
+                    .section {
+                        margin-bottom: 16px;
+                    }
+
+                    .contacts {
+                        span {
+                            font-size: rem(11px);
+                        }
+                    }
+
+                    .other{
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .logo {
+                    margin-bottom: 16px;
+                    margin-top: 29px;
+                }
+            }
+        }
+
+        .warning {
+            padding: 0 16px;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
