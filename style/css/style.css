@@ -73,6 +73,7 @@ html {
   cursor: pointer;
   top: calc(50% - 11px);
   transform: translateY(-50%);
+  background: white;
 }
 .LRbutton::after {
   position: absolute;
@@ -222,6 +223,60 @@ section .section-header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+
+#offers {
+  margin-top: 42px;
+  margin-bottom: 88px;
+}
+#offers .big-slider {
+  position: relative;
+}
+#offers .big-slider .slide {
+  background: linear-gradient(270.17deg, #DAE3F1 0.11%, #F5F5F5 99.15%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  height: 360px;
+  padding: 36px 42px;
+  position: relative;
+}
+#offers .big-slider .slide .content {
+  width: 632px;
+}
+#offers .big-slider .slide .content .date {
+  margin-bottom: 13px;
+}
+#offers .big-slider .slide .content .title {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+#offers .big-slider .slide .content .info {
+  z-index: 1;
+  position: relative;
+  color: #737881;
+}
+#offers .big-slider .slide img {
+  position: absolute;
+  bottom: 0;
+  right: 76px;
+}
+#offers .big-slider .LRbutton {
+  transform: initial;
+}
+#offers .big-slider .LRbutton.left {
+  bottom: 50px;
+  right: 120px;
+  left: initial;
+  top: initial;
+  z-index: 10;
+}
+#offers .big-slider .LRbutton.right {
+  bottom: 50px;
+  right: 40px;
+  left: initial;
+  top: initial;
+  z-index: 10;
 }
 
 #popular-services {
@@ -603,8 +658,9 @@ footer .warning {
     font-size: 0.75rem;
   }
 
-  .LRbutton::after {
-    top: calc(50% - 4px);
+  .LRbutton {
+    width: 54px !important;
+    height: 48px !important;
   }
 
   h1 {
@@ -633,7 +689,7 @@ footer .warning {
   }
 
   .d-desktop {
-    display: none;
+    display: none !important;
   }
 
   .d-mobile {
@@ -725,6 +781,33 @@ footer .warning {
   #signup .left form .row .input-wrapper .plus-seven {
     top: calc(50% - 7px);
     font-size: 22px;
+  }
+
+  #offers .big-slider .slide {
+    width: 100%;
+    padding: 20px 14px 190px 14px;
+    height: initial;
+  }
+  #offers .big-slider .slide .content {
+    width: 100%;
+  }
+  #offers .big-slider .slide .content .date {
+    margin-bottom: 6px;
+  }
+  #offers .big-slider .slide .content .title {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+  #offers .big-slider .slide img {
+    right: 0;
+  }
+  #offers .big-slider .LRbutton.left {
+    bottom: 20px;
+    right: 80px;
+  }
+  #offers .big-slider .LRbutton.right {
+    bottom: 20px;
+    right: 20px;
   }
 
   footer .container {

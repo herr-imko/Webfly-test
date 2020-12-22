@@ -92,6 +92,7 @@ html {
     cursor: pointer;
     top: calc(50% - 11px);
     transform: translateY(-50%);
+    background: white;
 
     &::after {
         position: absolute;
@@ -292,6 +293,71 @@ section {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 40px;
+    }
+}
+
+#offers {
+    margin-top: 42px;
+    margin-bottom: 88px;
+
+    .big-slider {
+        position: relative;
+
+        .slide {
+            background: linear-gradient(270.17deg, #DAE3F1 0.11%, #F5F5F5 99.15%);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 24px;
+            height: 360px;
+            padding: 36px 42px;
+            position: relative;
+
+            .content {
+                width: 632px;
+
+                .date {
+                    margin-bottom: 13px;
+                }
+
+                .title {
+                    font-weight: 400;
+                    font-size: 40px;
+                    margin-bottom: 32px;
+                }
+
+                .info {
+                    z-index: 1;
+                    position: relative;
+                    color: $dark-grey;
+                }
+            }
+
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 76px;
+            }
+
+        }
+
+        .LRbutton {
+            transform: initial;
+        }
+
+        .LRbutton.left {
+            bottom: 50px;
+            right: 120px;
+            left: initial;
+            top: initial;
+            z-index: 10;
+        }
+
+        .LRbutton.right {
+            bottom: 50px;
+            right: 40px;
+            left: initial;
+            top: initial;
+            z-index: 10;
+        }
     }
 }
 
@@ -773,9 +839,8 @@ footer {
     }
 
     .LRbutton {
-        &::after {
-            top: calc(50% - 4px);
-        }
+        width: 54px !important;
+        height: 48px !important;
     }
 
     h {
@@ -809,7 +874,7 @@ footer {
     }
 
     .d-desktop {
-        display: none;
+        display: none !important;
     }
 
     .d-mobile {
@@ -938,6 +1003,41 @@ footer {
         }
     }
 
+    #offers {
+        .big-slider {
+            .slide {
+                width: 100%;
+                padding: 20px 14px 190px 14px;
+                height: initial;
+
+                .content {
+                    width: 100%;
+
+                    .date {
+                        margin-bottom: 6px;
+                    }
+
+                    .title {
+                        margin-bottom: 8px;
+                        font-size: 24px;
+                    }
+                }
+
+                img {
+                    right: 0;
+                }
+            }
+            .LRbutton.left{
+                bottom: 20px;
+                right: 80px;
+            }
+            .LRbutton.right{
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    }
+
     footer {
         .container {
             flex-direction: column;
@@ -1059,7 +1159,6 @@ footer {
         }
 
         .bot {
-            // display: none;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -1075,7 +1174,6 @@ footer {
             transition: all linear 0.2s;
 
             &.show {
-                // transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
             }
