@@ -363,7 +363,8 @@ section {
     }
 }
 
-#popular-services {
+#popular-services,
+#services {
     margin-bottom: 70px;
 
     .cards {
@@ -408,6 +409,19 @@ section {
             }
         }
     }
+}
+
+#services {
+    .breadcrumbs {
+        margin-top: 37px;
+        margin-bottom: 6px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    margin-bottom: 68px;
 }
 
 #doctors {
@@ -649,6 +663,24 @@ footer {
     }
 }
 
+.breadcrumbs {
+    margin-top: 36px;
+    margin-bottom: 6px;
+
+    a {
+        &::after {
+            content: "—";
+            margin-left: 2px;
+        }
+
+        &:last-child {
+            &::after {
+                content: initial;
+            }
+        }
+    }
+}
+
 #doctor-banner {
     background: linear-gradient(270.17deg, #D0DAEA 0.11%, #F5F5F5 99.15%);
 
@@ -665,19 +697,7 @@ footer {
 
             .breadcrumbs {
                 margin-bottom: 6px;
-
-                a {
-                    &::after {
-                        content: "—";
-                        margin-left: 2px;
-                    }
-
-                    &:last-child {
-                        &::after {
-                            content: initial;
-                        }
-                    }
-                }
+                margin-top: 0;
             }
 
             h1 {
@@ -703,7 +723,7 @@ footer {
 }
 
 .LR {
-    padding: 0 105px 0 90px;
+    padding: 0 0 0 90px;
     display: flex;
     justify-content: space-between;
 
@@ -712,7 +732,32 @@ footer {
     }
 
     .right {
-        width: 190px;
+        width: 295px;
+
+        .subnav {
+            position: sticky;
+            top: 56px;
+            display: flex;
+            flex-direction: column;
+            border-left: 2px solid $grey;
+
+            a {
+                margin-left: -2px;
+                margin-bottom: 4px;
+                height: 36px;
+                padding-left: 27px;
+                display: flex;
+                align-items: center;
+                border-left: 2px solid $grey;
+                color: $dark-grey;
+
+                &.active,
+                &:hover {
+                    color: black;
+                    border-left: 2px solid $blue;
+                }
+            }
+        }
     }
 }
 
@@ -724,30 +769,6 @@ footer {
         margin-bottom: 24px;
     }
 
-    .subnav {
-        position: sticky;
-        top: 56px;
-        display: flex;
-        flex-direction: column;
-        border-left: 2px solid $grey;
-
-        a {
-            margin-left: -2px;
-            margin-bottom: 4px;
-            height: 36px;
-            padding-left: 27px;
-            display: flex;
-            align-items: center;
-            border-left: 2px solid $grey;
-            color: $dark-grey;
-
-            &.active,
-            &:hover {
-                color: black;
-                border-left: 2px solid $blue;
-            }
-        }
-    }
 }
 
 #doctor-about-main {
