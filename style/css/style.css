@@ -35,6 +35,7 @@ html {
 }
 .button-primary:hover {
   background: #3975DA;
+  text-decoration: none !important;
 }
 .button-primary span {
   font: 500 0.875rem Manrope;
@@ -111,6 +112,7 @@ h2 {
 }
 h3 {
   font: 400 1.375rem Manrope;
+  margin-bottom: 8px;
 }
 h4 {
   text-transform: uppercase;
@@ -189,6 +191,9 @@ header .top .container .contacts {
   text-align: right;
   margin-right: 100px;
 }
+header .top .container .contacts h3 {
+  margin-bottom: 0;
+}
 header .bot {
   border-top: 1px solid #DCE1E6;
   border-bottom: 1px solid #DCE1E6;
@@ -204,10 +209,10 @@ header nav a {
 header nav a h4 {
   color: #737881;
 }
-header nav a.active, header nav a:hover {
+header nav a.active {
   border-bottom: 2px solid #4285F4;
 }
-header nav a.active h4, header nav a:hover h4 {
+header nav a.active h4 {
   color: black;
 }
 
@@ -251,7 +256,7 @@ section .section-header {
 #offers .big-slider .slide .content .title {
   font-weight: 400;
   font-size: 40px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 #offers .big-slider .slide .content .info {
   z-index: 1;
@@ -410,7 +415,7 @@ section .section-header {
   position: absolute;
   top: 50%;
   left: 19px;
-  transform: translateY(-50%);
+  transform: translateY(-53%);
 }
 #signup .left form .row button {
   margin-left: auto;
@@ -468,6 +473,9 @@ footer .container .col {
   flex-direction: column;
   align-items: flex-start;
 }
+footer .container .col .addr {
+  color: #737881;
+}
 footer .container .col .content {
   display: flex;
   flex-direction: column;
@@ -511,6 +519,7 @@ footer .container .col .docs .doc .caption {
 }
 footer .container .col .other a {
   display: block;
+  color: #737881 !important;
 }
 footer .container .col .other a:first-child {
   margin-bottom: 16px;
@@ -533,9 +542,13 @@ footer .warning img {
   margin-top: 36px;
   margin-bottom: 6px;
 }
+.breadcrumbs a {
+  color: #737881;
+}
 .breadcrumbs a::after {
   content: "—";
   margin-left: 2px;
+  margin-right: 2px;
 }
 .breadcrumbs a:last-child::after {
   content: initial;
@@ -583,17 +596,14 @@ footer .warning img {
 .LR .left {
   width: 683px;
 }
-.LR .right {
-  width: 295px;
-}
-.LR .right .subnav {
+.LR .subnav {
   position: sticky;
   top: 56px;
   display: flex;
   flex-direction: column;
   border-left: 2px solid #DCE1E6;
 }
-.LR .right .subnav a {
+.LR .subnav a {
   margin-left: -2px;
   margin-bottom: 4px;
   height: 36px;
@@ -603,9 +613,12 @@ footer .warning img {
   border-left: 2px solid #DCE1E6;
   color: #737881;
 }
-.LR .right .subnav a.active, .LR .right .subnav a:hover {
+.LR .subnav a.active, .LR .subnav a:hover {
   color: black;
   border-left: 2px solid #4285F4;
+}
+.LR .right {
+  width: 295px;
 }
 
 #doctor-about {
@@ -685,6 +698,32 @@ footer .warning img {
   border-radius: 8px;
 }
 
+#info-general .subnav {
+  margin-top: 94px;
+}
+#info-general .subtitle {
+  color: #737881;
+  margin-bottom: 33px;
+}
+#info-general #requisites {
+  margin-bottom: 50px;
+}
+#info-general #requisites h3 {
+  margin-bottom: 20px;
+}
+#info-general #requisites .rows .row {
+  display: flex;
+  border-top: 1px solid #DCE1E6;
+  padding: 16px 0;
+}
+#info-general #requisites .rows .row:last-child {
+  border-bottom: 1px solid #DCE1E6;
+}
+#info-general #requisites .rows .row .key {
+  flex-shrink: 0;
+  width: 206px;
+}
+
 .dn {
   display: none !important;
 }
@@ -748,7 +787,8 @@ footer .warning img {
   #popular-services .cards .card {
     padding: 20px 0px 24px 16px;
     height: 208px;
-    max-width: 300px;
+    max-width: 100%;
+    width: 100%;
     margin-bottom: 16px;
     margin-right: 16px;
   }
@@ -768,7 +808,7 @@ footer .warning img {
     margin-right: -16px;
   }
   #doctors .cards .card {
-    width: 136px;
+    width: calc((100% - 32px) / 2);
     margin-bottom: 32px;
     margin-right: 16px;
   }
@@ -820,6 +860,9 @@ footer .warning img {
     font-size: 22px;
   }
 
+  #offers {
+    margin-top: 16px;
+  }
   #offers .big-slider .slide {
     width: 100%;
     padding: 20px 14px 190px 14px;
@@ -848,7 +891,7 @@ footer .warning img {
   }
 
   #doctor-banner .container .banner-wrapper {
-    padding: 21px 16px 340px 16px;
+    padding: 21px 0 340px 0;
   }
   #doctor-banner .container .banner-wrapper .left {
     width: 100%;
@@ -864,11 +907,16 @@ footer .warning img {
   #doctor-banner .container .banner-wrapper .left .subtitle {
     margin-bottom: 8px;
   }
+  #doctor-banner .container .banner-wrapper .left .button-primary {
+    min-width: 288px;
+    margin-top: 16px;
+  }
   #doctor-banner .container .banner-wrapper .right {
     right: 50%;
     transform: translateX(50%);
   }
   #doctor-banner .container .banner-wrapper .right img {
+    height: 288px;
     width: 320px;
   }
 
@@ -1016,6 +1064,7 @@ header .top .container .address .icon {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     position: fixed;
     z-index: 20;
     top: 0;
@@ -1032,7 +1081,10 @@ header .top .container .address .icon {
     visibility: visible;
   }
   header .bot > .button-primary {
-    margin-top: auto;
+    margin-top: 24px;
+    width: initial;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   header .bot .icon {
     position: absolute;
@@ -1058,6 +1110,15 @@ header .top .container .address .icon {
     letter-spacing: normal;
     text-transform: none;
     font-size: 1.375rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #doctors .cards .card {
+    width: calc((100% - 64px) / 4);
+  }
+
+  #popular-services .cards .card {
+    max-width: calc((100% - 32px) / 2);
   }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {

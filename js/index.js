@@ -1,4 +1,5 @@
-document.querySelector("form button").onclick = () => {
+document.querySelector("form ").onsubmit = () => {
+	event.preventDefault();
 	document.querySelector("form").remove();
 	document.querySelector("#signup h2").innerHTML = "Спасибо";
 	document.querySelector("#signup .subtitle").innerHTML = "В ближайшее время с Вами свяжется администратор. Напоминаем, что мы работаем без выходных с 9:00 до 21:00.";
@@ -27,3 +28,13 @@ if (window.screen.width > 1024) {
 		$("header .bot").toggleClass("show");
 	});
 }
+
+$("#signup .input-wrapper input").on("input", function () {
+	let last = this.value[this.value.length - 1];
+	this.value = this.value.slice(0, this.value.length - 1);
+	if (last.match("^[0-9]+$")) {
+		this.value = this.value + last;
+	}
+});
+
+
