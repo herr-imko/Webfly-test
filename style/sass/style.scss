@@ -1287,7 +1287,41 @@ footer {
         }
     }
 
-    #doctor-about-docs {}
+    #info-general {
+        #requisites {
+            .rows {
+                .row {
+                    .key {
+                        width: 110px !important;
+                        margin-right: 18px;
+                    }
+                }
+            }
+        }
+
+        #staff {
+            .button-secondary {
+                width: 100%;
+            }
+        }
+
+        #federal,
+        #personal {
+            a {
+                &:first-of-type {
+                    margin-bottom: 8px !important;
+                }
+            }
+        }
+
+        section {
+            margin-bottom: 32px !important;
+
+            h3 {
+                margin-bottom: 16px !important;
+            }
+        }
+    }
 
     .doc-slider {
         .slide {
@@ -1298,6 +1332,7 @@ footer {
 
     .LR {
         padding: 0;
+        margin-bottom: 32px !important;
 
         .subnav {
             margin-top: 24px !important;

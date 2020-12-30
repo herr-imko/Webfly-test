@@ -1010,6 +1010,24 @@ footer .warning img {
     margin-bottom: 30px;
   }
 
+  #info-general #requisites .rows .row .key {
+    width: 110px !important;
+    margin-right: 18px;
+  }
+  #info-general #staff .button-secondary {
+    width: 100%;
+  }
+  #info-general #federal a:first-of-type,
+#info-general #personal a:first-of-type {
+    margin-bottom: 8px !important;
+  }
+  #info-general section {
+    margin-bottom: 32px !important;
+  }
+  #info-general section h3 {
+    margin-bottom: 16px !important;
+  }
+
   .doc-slider .slide {
     width: calc(100vw / 4) !important;
     height: initial !important;
@@ -1017,6 +1035,7 @@ footer .warning img {
 
   .LR {
     padding: 0;
+    margin-bottom: 32px !important;
   }
   .LR .subnav {
     margin-top: 24px !important;

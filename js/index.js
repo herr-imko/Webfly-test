@@ -27,6 +27,10 @@ if (window.screen.width > 1024) {
 	$("header .bot .close").on("click", function () {
 		$("header .bot").toggleClass("show");
 	});
+
+	$("header .bot .button-primary.d-mobile").on("click", function () {
+		$("header .bot").toggleClass("show");
+	});
 }
 
 $("#signup .input-wrapper input").on("input", function () {
