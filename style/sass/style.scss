@@ -1034,6 +1034,36 @@ footer {
 
 @media (max-width: $mobile-max) {
 
+    #contacts {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 32px;
+
+        .map-container {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .rows{
+            .row{
+                margin-bottom: 0;
+                flex-direction: column;
+                .cell{
+                    margin-bottom: 24px;
+                    margin-right: 0;
+                    .title{
+                        h3{margin-bottom: 8px;}
+
+                    }
+                }
+            }
+        }
+        .breadcrumbs{
+            margin-top: 0;
+        }
+        h1{margin-bottom: 24px;}
+    }
+
     .button-primary,
     .button-secondary {
         span {

@@ -824,6 +824,33 @@ footer .warning img {
 }
 
 @media (max-width: 1024px) {
+  #contacts {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  #contacts .map-container {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  #contacts .rows .row {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  #contacts .rows .row .cell {
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+  #contacts .rows .row .cell .title h3 {
+    margin-bottom: 8px;
+  }
+  #contacts .breadcrumbs {
+    margin-top: 0;
+  }
+  #contacts h1 {
+    margin-bottom: 24px;
+  }
+
   .button-primary span,
 .button-secondary span {
     font-size: 0.75rem;
