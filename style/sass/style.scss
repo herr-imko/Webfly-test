@@ -8,7 +8,6 @@
     src: url(../font/Manrope-Regular.ttf);
 }
 
-
 $blue: #4285F4;
 $dark-grey: #737881;
 $grey: #DCE1E6;
@@ -861,6 +860,19 @@ footer {
     }
 }
 
+.doc-slider {
+    .slide {
+        width: 174px !important;
+        height: 250px !important;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
 #doctor-about-docs {
     .doc-slider {
         position: relative;
@@ -1275,21 +1287,22 @@ footer {
         }
     }
 
-    #doctor-about-docs {
-        .doc-slider {
-            .slide {
-                a {
-                    img {
-                        width: calc(100vw / 4);
-                        max-width: 150px;
-                    }
-                }
-            }
+    #doctor-about-docs {}
+
+    .doc-slider {
+        .slide {
+            width: calc(100vw / 4) !important;
+            height: initial !important;
         }
     }
 
     .LR {
         padding: 0;
+
+        .subnav {
+            margin-top: 24px !important;
+            position: static;
+        }
 
         .left {
             width: 100%;

@@ -34,7 +34,7 @@
 				<div class="icon circle close d-mobile"></div>
 				<div class="container">
 					<nav>
-						<a href="" class="active">
+						<a href="">
 							<h4>Главная</h4>
 						</a>
 						<a href="">
@@ -43,7 +43,7 @@
 						<a href="">
 							<h4>Врачи</h4>
 						</a>
-						<a href="">
+						<a href="" class="active">
 							<h4>Потребителю</h4>
 						</a>
 						<a href="">
@@ -143,42 +143,52 @@
 								<h3>Лицензия</h3>
 								<div class="doc-slider">
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png" title="Golden Manarola (Sanjeev Deo)">
 											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png" title="Golden Manarola (Sanjeev Deo)">
 											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
 											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
 											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
 											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
 											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
 											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
+											<img src="style/img/license-slide2.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
+											<img src="style/img/license-slide1.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
 											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
@@ -365,6 +375,27 @@
 					});
 					$(`a[href="#${lastScroll}"]`).addClass("active");
 				}
+			});
+		</script>
+		<link rel="stylesheet" href="fancybox-2.1.7/source/jquery.fancybox.css" />
+		<link rel="stylesheet" href="fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css" />
+		<script src="fancybox-2.1.7/source/jquery.fancybox.pack.js"></script>
+		<script src="fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".fancybox-thumb").fancybox({
+					prevEffect: "none",
+					nextEffect: "none",
+					helpers: {
+						title: {
+							type: "outside",
+						},
+						thumbs: {
+							width: 50,
+							height: 50,
+						},
+					},
+				});
 			});
 		</script>
 	</body>
