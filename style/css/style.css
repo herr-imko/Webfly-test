@@ -840,11 +840,11 @@ footer .warning img {
     margin-bottom: 24px;
   }
 
-  #popular-services .cards {
+  #popular-services .cards, #services .cards {
     justify-content: center;
     margin-right: -16px;
   }
-  #popular-services .cards .card {
+  #popular-services .cards .card, #services .cards .card {
     padding: 20px 0px 24px 16px;
     height: 208px;
     max-width: 100%;
@@ -852,10 +852,10 @@ footer .warning img {
     margin-bottom: 16px;
     margin-right: 16px;
   }
-  #popular-services .cards .card:last-child {
+  #popular-services .cards .card:last-child, #services .cards .card:last-child {
     margin-bottom: 20px;
   }
-  #popular-services .cards .card .left .info {
+  #popular-services .cards .card .left .info, #services .cards .card .left .info {
     z-index: 1;
     max-width: 172px;
   }
@@ -1200,7 +1200,7 @@ header .top .container .address .icon {
     width: calc((100% - 64px) / 4);
   }
 
-  #popular-services .cards .card {
+  #popular-services .cards .card, #services .cards .card {
     max-width: calc((100% - 32px) / 2);
   }
 }
@@ -1221,7 +1221,7 @@ header .top .container .address .icon {
     margin-left: 64px;
   }
 
-  #popular-services .cards .card {
+  #popular-services .cards .card, #services .cards .card {
     width: 49%;
   }
 
