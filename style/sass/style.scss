@@ -889,6 +889,24 @@ footer {
     }
 }
 
+.rows-like-table {
+    .row {
+        display: flex;
+        border-top: 1px solid #DCE1E6;
+
+        &:last-child {
+            border-bottom: 1px solid #DCE1E6;
+        }
+
+        padding: 16px 0;
+
+        .key {
+            flex-shrink: 0;
+            width: 206px;
+        }
+    }
+}
+
 #info-general {
     h1 {
         margin-bottom: 8px;
@@ -910,23 +928,6 @@ footer {
             margin-bottom: 16px;
         }
 
-        .rows {
-            .row {
-                display: flex;
-                border-top: 1px solid #DCE1E6;
-
-                &:last-child {
-                    border-bottom: 1px solid #DCE1E6;
-                }
-
-                padding: 16px 0;
-
-                .key {
-                    flex-shrink: 0;
-                    width: 206px;
-                }
-            }
-        }
     }
 
     #license {
@@ -988,6 +989,47 @@ footer {
 
 .dn {
     display: none !important;
+}
+
+#contacts {
+    width: 686px;
+    margin-left: 102px;
+    margin-bottom: 120px;
+
+    .rows {
+        margin-bottom: 16px;
+
+        .row {
+            margin-bottom: 50px;
+            display: flex;
+
+            .cell {
+                width: 240px;
+                margin-right: 65px;
+
+                .title {
+                    h3 {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .content {
+                    color: $dark-grey;
+
+                    a.blue {
+                        color: $blue
+                    }
+                }
+            }
+        }
+    }
+
+    .map-container {
+        background: #3aebca;
+        width: 687px;
+        height: 365px;
+        margin-bottom: 65px;
+    }
 }
 
 @media (max-width: $mobile-max) {
@@ -1052,7 +1094,8 @@ footer {
         }
     }
 
-    #popular-services, #services {
+    #popular-services,
+    #services {
         .cards {
             justify-content: center;
             margin-right: -16px;
@@ -1289,17 +1332,17 @@ footer {
         }
     }
 
-    #info-general {
-        #requisites {
-            .rows {
-                .row {
-                    .key {
-                        width: 110px !important;
-                        margin-right: 18px;
-                    }
-                }
+    .rows-like-table {
+        .row {
+            .key {
+                width: 110px !important;
+                margin-right: 18px;
             }
         }
+    }
+
+    #info-general {
+        #requisites {}
 
         #staff {
             .button-secondary {
@@ -1545,7 +1588,8 @@ footer {
         }
     }
 
-    #popular-services, #services {
+    #popular-services,
+    #services {
         .cards {
 
             .card {
@@ -1576,7 +1620,8 @@ footer {
         }
     }
 
-    #popular-services, #services {
+    #popular-services,
+    #services {
         .cards {
             .card {
                 width: 49%;
