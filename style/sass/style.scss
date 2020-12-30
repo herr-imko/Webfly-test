@@ -72,6 +72,7 @@ html {
 
     &:hover {
         background: $blue;
+        text-decoration: none !important;
 
         span {
             color: white;
@@ -875,6 +876,10 @@ footer {
 }
 
 #info-general {
+    h1 {
+        margin-bottom: 8px;
+    }
+
     .subnav {
         margin-top: 94px;
     }
@@ -885,10 +890,10 @@ footer {
     }
 
     #requisites {
-        margin-bottom: 50px;
+        margin-bottom: 48px;
 
         h3 {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .rows {
@@ -908,6 +913,62 @@ footer {
                 }
             }
         }
+    }
+
+    #license {
+        margin-bottom: 56px;
+
+        h3 {
+            margin-bottom: 32px;
+        }
+    }
+
+    #federal,
+    #personal {
+        margin-bottom: 56px;
+
+        h3 {
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: $blue;
+            display: block;
+
+            &:first-of-type {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    #staff {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 56px;
+
+        h3 {
+            margin-bottom: 24px;
+        }
+    }
+
+    #schedule {
+        margin-bottom: 56px;
+
+        h3 {
+            margin-bottom: 16px;
+            color: black;
+        }
+
+        color: $dark-grey;
+    }
+
+    #personal {
+        margin-bottom: 0;
+    }
+
+    .LR {
+        margin-bottom: 100px;
     }
 }
 

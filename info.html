@@ -139,11 +139,71 @@
 									</div>
 								</div>
 							</section>
-							<section id="license"></section>
-							<section id="federal"></section>
-							<section id="staff"></section>
-							<section id="schedule"></section>
-							<section id="personal"></section>
+							<section id="license">
+								<h3>Лицензия</h3>
+								<div class="doc-slider">
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide1.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide2.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide1.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide2.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide1.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide2.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide1.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a href="">
+											<img src="style/img/license-slide2.png" alt="" />
+										</a>
+									</div>
+								</div>
+							</section>
+							<section id="federal">
+								<h3>Программа гос.гарантий</h3>
+								<a href="">Федеральный закон от 21.11.2011 года №323-ФЗ «Об основах охраны здоровья граждан в Российской Федерации», статья 80 «Программа государственных гарантий бесплатного оказания гражданам медицинской помощи» </a>
+								<a href="">Территориальная программа обязательного медицинского страхования Московской области</a>
+							</section>
+							<section id="staff">
+								<h3>Сведения о медицинских работниках, участвующих в предоставлении платных медицинских услуг</h3>
+								<a href="" class="button-secondary">
+									<span> все врачи </span>
+								</a>
+							</section>
+							<section id="schedule">
+								<h3>Режим работы</h3>
+								«Общество с ограниченной ответственностью «Многопрофильный медико-хирургический центр «Жуковка» » работает с понедельника по воскресенье с 9:00 до 21:00. Платные медицинские услуги оказываются специалистами только по предварительной записи.
+							</section>
+							<section id="personal">
+								<h3>Защита или обработка персональных данных</h3>
+								<a href="">Федеральный закон «О персональных данных» от 27.07.2006 года № 152-ФЗ </a>
+								<a href="">Положение о защите и обработке персональных данных «ООО «Многопрофильный медико-хирургический центр «Основа»</a>
+							</section>
 						</div>
 						<div class="right">
 							<div class="subnav">
@@ -158,6 +218,36 @@
 						</div>
 					</div>
 				</div>
+
+				<section id="signup">
+					<div class="container">
+						<div class="left">
+							<h2>Записаться на прием</h2>
+							<div class="subtitle">
+								Работаем без выходных с 9:00 до 21:00. <br />
+								Для Вашего удобства, пройти консультацию с доктором можно в клинике или онлайн.
+							</div>
+							<form>
+								<div class="row">
+									<div class="input-wrapper">
+										<input type="tel" placeholder="(000) 000-00-00" required minlength="10" pattern=".{10,}" />
+										<h3 class="plus-seven">+7</h3>
+									</div>
+									<button type="submit" class="button-primary">
+										<span>Отправить</span>
+									</button>
+								</div>
+								<div class="row">
+									<input class="check" type="checkbox" required checked />
+									<div class="caption">Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных в соответствии с Политикой конфиденциальности.</div>
+								</div>
+							</form>
+						</div>
+						<div class="right">
+							<img src="style/img/caller.png" alt="" />
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
 
@@ -250,10 +340,13 @@
 		</script>
 		<script>
 			let sects = {
-				"doctor-about-main": null,
-				"doctor-about-spec": null,
-				"doctor-about-education": null,
-				"doctor-about-docs": null,
+				info: null,
+				requisites: null,
+				license: null,
+				federal: null,
+				staff: null,
+				schedule: null,
+				personal: null,
 				signup: null,
 			};
 			for (const key in sects) {

@@ -55,6 +55,7 @@ html {
 }
 .button-secondary:hover {
   background: #4285F4;
+  text-decoration: none !important;
 }
 .button-secondary:hover span {
   color: white;
@@ -698,6 +699,9 @@ footer .warning img {
   border-radius: 8px;
 }
 
+#info-general h1 {
+  margin-bottom: 8px;
+}
 #info-general .subnav {
   margin-top: 94px;
 }
@@ -706,10 +710,10 @@ footer .warning img {
   margin-bottom: 33px;
 }
 #info-general #requisites {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 #info-general #requisites h3 {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 #info-general #requisites .rows .row {
   display: flex;
@@ -722,6 +726,52 @@ footer .warning img {
 #info-general #requisites .rows .row .key {
   flex-shrink: 0;
   width: 206px;
+}
+#info-general #license {
+  margin-bottom: 56px;
+}
+#info-general #license h3 {
+  margin-bottom: 32px;
+}
+#info-general #federal,
+#info-general #personal {
+  margin-bottom: 56px;
+}
+#info-general #federal h3,
+#info-general #personal h3 {
+  margin-bottom: 16px;
+}
+#info-general #federal a,
+#info-general #personal a {
+  color: #4285F4;
+  display: block;
+}
+#info-general #federal a:first-of-type,
+#info-general #personal a:first-of-type {
+  margin-bottom: 24px;
+}
+#info-general #staff {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 56px;
+}
+#info-general #staff h3 {
+  margin-bottom: 24px;
+}
+#info-general #schedule {
+  margin-bottom: 56px;
+  color: #737881;
+}
+#info-general #schedule h3 {
+  margin-bottom: 16px;
+  color: black;
+}
+#info-general #personal {
+  margin-bottom: 0;
+}
+#info-general .LR {
+  margin-bottom: 100px;
 }
 
 .dn {
