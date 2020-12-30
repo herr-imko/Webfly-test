@@ -139,6 +139,7 @@ html {
 h {
     &1 {
         font: 400 rem(40px) Manrope;
+        margin-bottom: 32px;
     }
 
     &2 {
@@ -431,7 +432,7 @@ section {
 }
 
 #doctors {
-    margin-bottom: 110px;
+    margin-bottom: 72px;
 
     .cards {
         display: flex;
@@ -440,6 +441,7 @@ section {
 
         .card {
             width: 277px;
+            margin-bottom: 32px;
 
             .photo {
                 margin-bottom: 15px;

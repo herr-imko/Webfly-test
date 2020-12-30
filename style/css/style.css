@@ -107,6 +107,7 @@ html {
 
 h1 {
   font: 400 2.5rem Manrope;
+  margin-bottom: 32px;
 }
 h2 {
   font: 400 2rem Manrope;
@@ -347,7 +348,7 @@ section .section-header {
 }
 
 #doctors {
-  margin-bottom: 110px;
+  margin-bottom: 72px;
 }
 #doctors .cards {
   display: flex;
@@ -356,6 +357,7 @@ section .section-header {
 }
 #doctors .cards .card {
   width: 277px;
+  margin-bottom: 32px;
 }
 #doctors .cards .card .photo {
   margin-bottom: 15px;
