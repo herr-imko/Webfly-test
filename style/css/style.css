@@ -1276,17 +1276,23 @@ header .top .container .address .icon {
   .LR {
     padding: 0;
   }
-  .LR .left {
-    margin-right: 64px;
+  .LR > .left {
+    margin-right: 16px;
     flex-shrink: 1;
   }
-  .LR .right {
+  .LR > .right {
     flex-shrink: 0;
   }
 
-  #doctor-about-docs .doc-slider {
-    width: calc(100% - 80px);
-    margin-left: 64px;
+  .LRbutton.left {
+    left: 0;
+  }
+  .LRbutton.right {
+    right: 0;
+  }
+
+  .doc-slider {
+    padding: 0 64px;
   }
 
   #popular-services .cards .card,

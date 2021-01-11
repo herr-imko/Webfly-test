@@ -338,6 +338,12 @@
 								arrows: false,
 							},
 						},
+						{
+							breakpoint: 1280,
+							settings: {
+								slidesToShow: 2.35,
+							},
+						},
 					],
 				});
 			});
@@ -366,6 +372,17 @@
 					});
 					$(`a[href="#${lastScroll}"]`).addClass("active");
 				}
+			});
+
+			$(".subnav a").on("click", function () {
+				event.preventDefault();
+				$([document.documentElement, document.body]).animate(
+					{
+						scrollTop: $($(this).attr("href")).offset().top,
+					},
+					200,
+					"linear"
+				);
 			});
 		</script>
 	</body>
