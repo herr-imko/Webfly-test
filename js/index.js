@@ -36,3 +36,42 @@ if (window.screen.width > 1024) {
 $("#signup .input-wrapper input").on("input", function () {
 	this.value = this.value.replace(/[^0-9]/g, "");
 });
+
+if (document.querySelector(".subnav")) {
+	window.addEventListener("scroll", function () {
+		let sects = {};
+
+		$(".subnav a").each(function () {
+			sects[$(this).attr("href")] = null;
+		});
+
+		for (const key in sects) {
+			sects[key] = $(key).offset().top;
+		}
+
+		for (const key in sects) {
+			if (window.scrollY + 100 >= sects[key]) {
+				var lastScroll = key.slice(1);
+			}
+		}
+
+		if (lastScroll) {
+			document.querySelectorAll(".subnav a").forEach((a) => {
+				a.classList.remove("active");
+			});
+			$(`a[href="#${lastScroll}"]`).addClass("active");
+		}
+	});
+
+	$(".subnav a").on("click", function () {
+		event.preventDefault();
+		console.log(window.scrollY, $($(this).attr("href")).offset().top);
+		$([document.documentElement, document.body]).animate(
+			{
+				scrollTop: $($(this).attr("href")).offset().top,
+			},
+			200,
+			"linear"
+		);
+	});
+}

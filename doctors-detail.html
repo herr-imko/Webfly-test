@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style/css/slick.css" />
+		<link rel="stylesheet" href="plugins/slick/slick.css" />
 		<link rel="stylesheet" href="style/css/style.css" />
 		<title>Жуковка</title>
 	</head>
@@ -320,7 +320,7 @@
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js/index.js"></script>
-		<script src="js/slick.js"></script>
+		<script src="plugins/slick/slick.js"></script>
 		<script>
 			$(document).ready(function () {
 				$(".doc-slider").slick({
@@ -346,43 +346,6 @@
 						},
 					],
 				});
-			});
-		</script>
-		<script>
-			let sects = {
-				"doctor-about-main": null,
-				"doctor-about-spec": null,
-				"doctor-about-education": null,
-				"doctor-about-docs": null,
-				signup: null,
-			};
-			for (const key in sects) {
-				sects[key] = $(`#${key}`).offset().top;
-			}
-			window.addEventListener("scroll", function () {
-				let lastScroll;
-				for (const key in sects) {
-					if (window.scrollY + 100 >= sects[key]) {
-						lastScroll = key;
-					}
-				}
-				if (lastScroll) {
-					document.querySelectorAll(".subnav a").forEach((a) => {
-						a.classList.remove("active");
-					});
-					$(`a[href="#${lastScroll}"]`).addClass("active");
-				}
-			});
-
-			$(".subnav a").on("click", function () {
-				event.preventDefault();
-				$([document.documentElement, document.body]).animate(
-					{
-						scrollTop: $($(this).attr("href")).offset().top,
-					},
-					200,
-					"linear"
-				);
 			});
 		</script>
 	</body>

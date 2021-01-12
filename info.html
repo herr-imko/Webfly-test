@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style/css/slick.css" />
+		<link rel="stylesheet" href="plugins/slick/slick.css" />
 		<link rel="stylesheet" href="style/css/style.css" />
 		<title>Жуковка</title>
 	</head>
@@ -326,7 +326,7 @@
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js/index.js"></script>
-		<script src="js/slick.js"></script>
+		<script src="plugins/slick/slick.js"></script>
 		<script>
 			$(document).ready(function () {
 				$(".doc-slider").slick({
@@ -352,35 +352,6 @@
 						},
 					],
 				});
-			});
-		</script>
-		<script>
-			let sects = {
-				info: null,
-				requisites: null,
-				license: null,
-				federal: null,
-				staff: null,
-				schedule: null,
-				personal: null,
-				signup: null,
-			};
-			for (const key in sects) {
-				sects[key] = $(`#${key}`).offset().top;
-			}
-			window.addEventListener("scroll", function () {
-				let lastScroll;
-				for (const key in sects) {
-					if (window.scrollY + 100 >= sects[key]) {
-						lastScroll = key;
-					}
-				}
-				if (lastScroll) {
-					document.querySelectorAll(".subnav a").forEach((a) => {
-						a.classList.remove("active");
-					});
-					$(`a[href="#${lastScroll}"]`).addClass("active");
-				}
 			});
 		</script>
 		<link rel="stylesheet" href="plugins/fancybox-2.1.7/source/jquery.fancybox.css" />

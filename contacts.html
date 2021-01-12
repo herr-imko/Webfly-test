@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style/css/slick.css" />
 		<link rel="stylesheet" href="style/css/style.css" />
 		<title>Жуковка</title>
 	</head>
@@ -164,35 +163,35 @@
 					</section>
 				</section>
 			</div>
-         <section id="signup">
-            <div class="container">
-               <div class="left">
-                  <h2>Записаться на прием</h2>
-                  <div class="subtitle">
-                     Работаем без выходных с 9:00 до 21:00. <br />
-                     Для Вашего удобства, пройти консультацию с доктором можно в клинике или онлайн.
-                  </div>
-                  <form>
-                     <div class="row">
-                        <div class="input-wrapper">
-                           <input type="tel" placeholder="(000) 000-00-00" required minlength="10" pattern=".{10,}" />
-                           <h3 class="plus-seven">+7</h3>
-                        </div>
-                        <button type="submit" class="button-primary">
-                           <span>Отправить</span>
-                        </button>
-                     </div>
-                     <div class="row">
-                        <input class="check" type="checkbox" required checked />
-                        <div class="caption">Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных в соответствии с Политикой конфиденциальности.</div>
-                     </div>
-                  </form>
-               </div>
-               <div class="right">
-                  <img src="style/img/caller.png" alt="" />
-               </div>
-            </div>
-         </section>
+			<section id="signup">
+				<div class="container">
+					<div class="left">
+						<h2>Записаться на прием</h2>
+						<div class="subtitle">
+							Работаем без выходных с 9:00 до 21:00. <br />
+							Для Вашего удобства, пройти консультацию с доктором можно в клинике или онлайн.
+						</div>
+						<form>
+							<div class="row">
+								<div class="input-wrapper">
+									<input type="tel" placeholder="(000) 000-00-00" required minlength="10" pattern=".{10,}" />
+									<h3 class="plus-seven">+7</h3>
+								</div>
+								<button type="submit" class="button-primary">
+									<span>Отправить</span>
+								</button>
+							</div>
+							<div class="row">
+								<input class="check" type="checkbox" required checked />
+								<div class="caption">Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных в соответствии с Политикой конфиденциальности.</div>
+							</div>
+						</form>
+					</div>
+					<div class="right">
+						<img src="style/img/caller.png" alt="" />
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<div class="container">
@@ -259,18 +258,5 @@
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js/index.js"></script>
-		<script src="js/slick.js"></script>
-
-		<script>
-			$(document).ready(function () {
-				$(".big-slider").slick({
-					infinite: false,
-					prevArrow: '<div class="LRbutton left"></div>',
-					nextArrow: '<div class="LRbutton right"></div>',
-					appendArrows: ".big-slider",
-					fade: true,
-				});
-			});
-		</script>
 	</body>
 </html>
