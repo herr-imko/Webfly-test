@@ -327,7 +327,11 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="plugins/slick/slick.js"></script>
-		<script>
+		<link rel="stylesheet" href="plugins/fancybox-2.1.7/source/jquery.fancybox.css" />
+		<link rel="stylesheet" href="plugins/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css" />
+		<script src="plugins/fancybox-2.1.7/source/jquery.fancybox.pack.js"></script>
+		<script src="plugins/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js"></script>
+		<script type="text/javascript">
 			$(document).ready(function () {
 				$(".doc-slider").slick({
 					infinite: false,
@@ -352,14 +356,6 @@
 						},
 					],
 				});
-			});
-		</script>
-		<link rel="stylesheet" href="plugins/fancybox-2.1.7/source/jquery.fancybox.css" />
-		<link rel="stylesheet" href="plugins/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css" />
-		<script src="plugins/fancybox-2.1.7/source/jquery.fancybox.pack.js"></script>
-		<script src="plugins/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function () {
 				$(".fancybox-thumb").fancybox({
 					prevEffect: "none",
 					nextEffect: "none",

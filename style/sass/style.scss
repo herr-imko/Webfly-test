@@ -1254,6 +1254,7 @@ footer {
                 width: 100%;
                 padding: 20px 14px 190px 14px;
                 height: initial;
+                height: 354px;
 
                 .content {
                     width: 100%;
@@ -1452,7 +1453,7 @@ footer {
 
                 .title {
                     margin: 0;
-                    padding: 16px 0;
+                    padding: 16px 6px 16px 0;
                     width: 100%;
                     display: flex;
 
@@ -1563,7 +1564,7 @@ footer {
             top: 0;
             background: white;
             height: 100vh;
-            width: 100vw;
+            width: 100%;
             padding: 128px 16px 40px 16px;
             visibility: hidden;
             opacity: 0;

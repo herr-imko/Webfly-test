@@ -169,43 +169,53 @@
 								<h3>Галерея документов</h3>
 								<div class="doc-slider">
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc2.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png" title="Golden Manarola (Sanjeev Deo)">
+											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc1.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png" title="Golden Manarola (Sanjeev Deo)">
+											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc2.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
+											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc1.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
+											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc2.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
+											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc1.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
+											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc2.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
+											<img src="style/img/license-slide1.png" alt="" />
 										</a>
 									</div>
 									<div class="slide">
-										<a href="">
-											<img src="style/img/doc1.png" alt="" />
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
+											<img src="style/img/license-slide2.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide1.png">
+											<img src="style/img/license-slide1.png" alt="" />
+										</a>
+									</div>
+									<div class="slide">
+										<a class="fancybox-thumb" rel="fancybox-thumb" href="style/img/license-slide2.png">
+											<img src="style/img/license-slide2.png" alt="" />
 										</a>
 									</div>
 								</div>
@@ -321,7 +331,11 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="plugins/slick/slick.js"></script>
-		<script>
+		<link rel="stylesheet" href="plugins/fancybox-2.1.7/source/jquery.fancybox.css" />
+		<link rel="stylesheet" href="plugins/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css" />
+		<script src="plugins/fancybox-2.1.7/source/jquery.fancybox.pack.js"></script>
+		<script src="plugins/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js"></script>
+		<script type="text/javascript">
 			$(document).ready(function () {
 				$(".doc-slider").slick({
 					infinite: false,
@@ -345,6 +359,19 @@
 							},
 						},
 					],
+				});
+				$(".fancybox-thumb").fancybox({
+					prevEffect: "none",
+					nextEffect: "none",
+					helpers: {
+						title: {
+							type: "outside",
+						},
+						thumbs: {
+							width: 50,
+							height: 50,
+						},
+					},
 				});
 			});
 		</script>
