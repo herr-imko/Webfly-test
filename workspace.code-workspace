@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "www — (Remote)",
+			"uri": "ftp://webfly/"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Webfly-test"
+	}
+}
