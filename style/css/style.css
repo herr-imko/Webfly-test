@@ -144,7 +144,7 @@ a {
   cursor: pointer;
 }
 a:hover {
-  text-decoration: underline;
+  color: #4285f4 !important;
 }
 
 .icon.circle {
@@ -219,6 +219,9 @@ header nav a.active {
 }
 header nav a.active h4 {
   color: black;
+}
+header nav a:hover h4 {
+  color: #4285f4;
 }
 
 .container {
@@ -523,9 +526,15 @@ footer .container .col .docs .doc .caption {
   color: #737881;
   margin-left: 16px;
 }
+footer .container .col .docs .doc .caption:hover {
+  color: #4285f4;
+}
 footer .container .col .other a {
   display: block;
   color: #737881 !important;
+}
+footer .container .col .other a:hover {
+  color: #4285f4 !important;
 }
 footer .container .col .other a:first-child {
   margin-bottom: 16px;
@@ -550,6 +559,9 @@ footer .warning img {
 }
 .breadcrumbs a {
   color: #737881;
+}
+.breadcrumbs a:hover {
+  color: #4285f4;
 }
 .breadcrumbs a::after {
   content: "—";
@@ -620,7 +632,7 @@ footer .warning img {
   color: #737881;
 }
 .LR .subnav a.active, .LR .subnav a:hover {
-  color: black;
+  color: #4285f4;
   border-left: 2px solid #4285f4;
 }
 .LR .right {

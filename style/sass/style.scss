@@ -179,9 +179,8 @@ a {
 	text-decoration: none;
 	color: black;
 	cursor: pointer;
-
 	&:hover {
-		text-decoration: underline;
+		color: #4285f4 !important;
 	}
 }
 
@@ -282,6 +281,10 @@ header {
 				h4 {
 					color: black;
 				}
+			}
+
+			&:hover h4 {
+				color: #4285f4;
 			}
 		}
 	}
@@ -639,6 +642,10 @@ footer {
 						max-width: 180px;
 						color: $dark-grey;
 						margin-left: 16px;
+
+						&:hover {
+							color: #4285f4;
+						}
 					}
 				}
 			}
@@ -647,6 +654,10 @@ footer {
 				a {
 					display: block;
 					color: #737881 !important;
+
+					&:hover {
+						color: #4285f4 !important;
+					}
 
 					&:first-child {
 						margin-bottom: 16px;
@@ -680,6 +691,10 @@ footer {
 
 	a {
 		color: #737881;
+
+		&:hover {
+			color: #4285f4;
+		}
 
 		&::after {
 			content: "—";
@@ -764,7 +779,7 @@ footer {
 
 			&.active,
 			&:hover {
-				color: black;
+				color: #4285f4;
 				border-left: 2px solid $blue;
 			}
 		}
