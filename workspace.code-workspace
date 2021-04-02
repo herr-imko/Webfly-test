@@ -5,10 +5,6 @@
 			"uri": "ftp://osnova/"
 		},
 		{
-			"name": "www — (Remote)",
-			"uri": "ftp://webfly/"
-		},
-		{
 			"path": "."
 		}
 	],
