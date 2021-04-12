@@ -25,6 +25,9 @@ html {
 .d-mobile {
   display: none !important;
 }
+.d-mobile-block {
+  display: none !important;
+}
 
 .button-primary {
   background: #4285f4;
@@ -908,6 +911,9 @@ footer .warning img {
   .d-mobile {
     display: flex !important;
   }
+  .d-mobile-block {
+    display: block !important;
+  }
 
   .container {
     padding: 0 16px;
@@ -1223,6 +1229,7 @@ header .top .container .address .icon {
     right: 24px;
   }
   header .top .container .address {
+    order: 2;
     padding-right: 90px;
     color: black;
   }

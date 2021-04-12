@@ -1,8 +1,8 @@
 {
 	"folders": [
 		{
-			"name": "www — (Remote)",
-			"uri": "ftp://osnova/"
+			"name": "zhukovka — (Remote)",
+			"uri": "ftp://zhukovka/"
 		},
 		{
 			"path": "."

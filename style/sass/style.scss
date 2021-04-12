@@ -37,6 +37,9 @@ html {
 
 .d-mobile {
 	display: none !important;
+	&-block {
+		display: none !important;
+	}
 }
 
 .button-primary {
@@ -1129,6 +1132,9 @@ footer {
 
 	.d-mobile {
 		display: flex !important;
+		&-block {
+			display: block !important;
+		}
 	}
 
 	.container {
@@ -1558,6 +1564,7 @@ footer {
 				}
 
 				.address {
+					order: 2;
 					padding-right: 90px;
 					color: black;
 				}
