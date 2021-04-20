@@ -970,8 +970,9 @@ footer {
 		a {
 			color: $blue;
 			display: block;
+			margin-bottom: 24px;
 
-			&:first-of-type {
+			&:last-child {
 				margin-bottom: 24px;
 			}
 		}
